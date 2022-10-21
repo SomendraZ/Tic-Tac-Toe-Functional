@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+*{
+  justify-content: center;
+  font-family: 'Fredoka One';
+}
+body{
+  height: 100vh;
+  background: dodgerblue;
+}
+html{
+  font-size: 16px;
+}
+.wrapper{
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+.name{
+  display: flex;
+  font-family: 'Fredoka One';
+  color: #FAB201;
+  -webkit-text-stroke: 2px white;
+  font-size: 40px;
+}
+.container{
+  margin-top: 150px;
+  width: 65vmin;
+  height: 65vmin;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2vmin;
+}
+.button-option{
+  background: #ffffff;
+  height: 20vmin;
+  width: 20vmin;
+  border: none;
+  border-radius: 8px;
+  font-size: 12vmin;
+  color: dodgerblue;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+#restart{
+  font-size: 1.3em;
+  padding: 1em;
+  border-radius: 8px;
+  background-color: #0a0027;
+  color: #ffffff;
+  border: none;
+  position: relative;
+  margin: 1.5em auto 0 auto;
+  display: block;
+}
+.popup{
+  background: dodgerblue;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  z-index: 2;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1em;
+  font-size: 12vmin;
+}
+#new-game{
+  font-size: 0.6em;
+  padding: 0.5em 1em;
+  background-color: #0a0027;
+  color: #ffffff;
+  border-radius: 0.2em;
+  border: none;
+}
+#message{
+  color: #ffffff;
+  text-align: center;
+  font-size: 1em;
+}
+.popup.hide{
+  display: none;
+}
